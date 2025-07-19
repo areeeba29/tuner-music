@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuner Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- Auth Modal -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="authTitle">Login</h2>
+
+    <input type="text" id="authUsername" placeholder="Username" />
+    <input type="password" id="authPassword" placeholder="Password" />
+
+    <button id="authSubmit">Login</button>
+
+    <p id="toggleAuth">
+      Don't have an account? <span class="switch-mode">Sign Up</span>
+    </p>
+  </div>
+</div>
+
+
+
+<body>
+  <div class="main-menu">
+    <header>
+      <div class="logo-section">
+        <img src="2.png" alt="Logo" class="logo">
+        <h1>Welcome To Tuner Music ♫</h1>
+      </div>
+      <input type="text" id="search" placeholder="Search your favourite song...">
+      <button id="loginBtn" class="login-btn">Login</button>
+
+
+    </header>
+
+    <section class="music-section">
+      <h2>✧ Recommended for You</h2>
+      <div class="song-list" id="recommended"></div>
+    </section>
+
+    <hr>
+
+    <section class="music-section">
+      <h2>✩ Top Picks</h2>
+      <div class="song-list" id="topPicks"></div>
+    </section>
+
+    <hr>
+
+    <section class="music-section">
+      <h2>⏱ Recently Played</h2>
+      <div class="song-list" id="recent"></div>
+    </section>
+
+    <p id="noResults" style="display:none; text-align:center; color:#fdf6e3; margin-top:20px;">No results found</p>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
