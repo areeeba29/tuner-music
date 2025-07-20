@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuner Music - Now Playing</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div class="player-container">
+    <button id="backBtn">⬅</button>
+
+    <img id="cover" src="" alt="Cover" />
+    <h2 id="title">Title</h2>
+    <p id="artist">Artist</p>
+
+    <audio id="audio" preload="auto"></audio>
+
+    <!-- Progress bar -->
+    <input type="range" id="progress" min="0" max="100" value="0" aria-label="Song progress">
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="shuffle" title="Shuffle" style="opacity: 0.5;">🔀</button>
+      <button id="prev" title="Previous">⏮</button>
+      <button id="playPause" title="Play/Pause">▶</button>
+      <button id="next" title="Next">⏭</button>
+      <button id="loop" title="Loop" style="opacity: 0.5;">🔁</button>
+    </div>
+
+    
+
+    <!-- Volume -->
+    <div class="volume-bar">
+      <span>🔊</span>
+      <input type="range" id="volume" min="0" max="1" step="0.1" aria-label="Volume control">
+    </div>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>
